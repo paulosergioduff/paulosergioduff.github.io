@@ -1,0 +1,49 @@
+#topo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    
+    z-index: 9999;
+}
+#anuncio {
+    position: absolute;
+    right: 5%;
+    top: 100px;    
+    z-index: 9999;
+}
+#react{
+	position: absolute;
+	top: 380px;
+	left: 100px;
+}
+.views{
+	font-size: 24px;
+}
+#conteudo {
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    height: 315px;
+    
+    /*z-index: 9999;*/
+}
+#comentarios {
+    position: absolute;
+    top: 450px;
+    width: 55%;
+    left: 5%;
+    
+}
+#relacionados {
+    position: absolute;
+    top: 450px;
+    right: 2.5%;
+    
+}
+.conteudoMeio {
+    top: 10%;
+    left: 5%;
+    position: absolute;
+}
