@@ -1,0 +1,9 @@
+ git rm -r less/
+ git rm -r arquivo/
+ git rm -r css/
+ git rm -r img/
+ git rm -r mail/
+ git rm -r startbootstrap-clean-blog-gh-pages/
+ git rm -r vendor/
+ git rm -r vhp/
+ git rm -r *.html
