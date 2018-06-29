@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<core>
+  <sys>
+    <idiv>UTp2jwC_KeM832309410189158</idiv>
+    <idevideo>UTp2jwC_KeM</idevideo>
+    <title> Banco do Brasil - Aulão de Informática - Aula 01 - Linux</title>
+    <author>Comunidade-BR</author>
+    <description> O Estúdio Aulas foi criado em 2012 com objetivo levar os melhores professores de concursos públicos para a sua casa. A idéia é expandir por todo o Brasil, o ....</description>
+    <keywords></keywords>
+  </sys>
+  <db>
+    <type>mysql</type>
+    <host>localhost</host>
+    <user>quser</user>
+    <password>quser</password>
+    <database>mukeka</database>
+  </db>
+</core>

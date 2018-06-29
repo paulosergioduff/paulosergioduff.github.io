@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<core>
+  <sys>
+    <idiv>BEtIoGQxqQs00000000001h</idiv>
+    <idevideo>BEtIoGQxqQs</idevideo>
+    <title> afro ninja</title>
+    <author>Comunidade-BR</author>
+    <description> afro ninja.</description>
+    <keywords></keywords>
+  </sys>
+  <db>
+    <type>mysql</type>
+    <host>localhost</host>
+    <user>quser</user>
+    <password>quser</password>
+    <database>mukeka</database>
+  </db>
+</core>

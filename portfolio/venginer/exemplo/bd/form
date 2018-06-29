@@ -1,0 +1,5 @@
+<body>
+<form action="main.php" method="POST">
+Nome<input type="text" name="nome"><br>
+Dados<input type="text" name="dados"><br>
+<input type="submit" value="enviar">

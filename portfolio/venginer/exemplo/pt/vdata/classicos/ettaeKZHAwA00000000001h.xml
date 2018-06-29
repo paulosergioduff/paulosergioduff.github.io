@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<core>
+  <sys>
+    <idiv>ettaeKZHAwA00000000001h</idiv>
+    <idevideo>ettaeKZHAwA</idevideo>
+    <title> ★★★ YTPMV - Seu Madruga Will Go On do mestre3224 ★★★</title>
+    <author>Comunidade-BR</author>
+    <description> tenho certeza que gostarão de: http://www.youtube.com/watch?v=PzE-TofoECQ NÃO SE INSCREVA SE NÃO CONHECE O MEU CANAL Musica de fundo: Anamanaguchi - My skate....</description>
+    <keywords></keywords>
+  </sys>
+  <db>
+    <type>mysql</type>
+    <host>localhost</host>
+    <user>quser</user>
+    <password>quser</password>
+    <database>mukeka</database>
+  </db>
+</core>
