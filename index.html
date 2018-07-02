@@ -1,83 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Bare - Start Bootstrap Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
-
-    </style>
-
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<html lang="pt">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Bare - Start Bootstrap Template</title>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <style>
+         body {
+         padding-top: 54px;
+         }
+         @media (min-width: 992px) {
+         body {
+         padding-top: 56px;
+         }
+         }
+      </style>
+      <style type="text/css">
+         .botoes{
+         clear: both;
+         }
+      </style>
+   </head>
+   <body >
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <input type="button"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Home
+                     <span class="sr-only">(current)</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Page Content -->
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+         <div class="row">
+            <div class="col-lg-12 text-center" >
+               <hr>
+               <div id="legenda">
+                  <h1>Faça um orçamento para ciração de seu site, aplicativo ou sistema, clicando em avançar:</h1>
+               </div>
+               <section id="objeto0" style="display: none;">
+                  <hr>
+                  <br>
+
+                 <center>
+                  <form action="http://seguregitproject.getenjoyment.net//envioDeProposta.php" method="POST" name="formMain">
+                 	 <table  cellpadding="24">
+               		<tr>
+               			<td><input type="button"  type="button" class="btn btn-primary" onclick="escolheTipoDeProjeto('Site');" value="Eu quero um site"></td>
+               			<td><input type="button"  type="button" class="btn btn-success" onclick="escolheTipoDeProjeto('Aplicativo');" value="Eu quero um aplicativo"></td>
+               			<td><input type="button"  type="button" class="btn btn-secondary" onclick="escolheTipoDeProjeto('Sistema')"; value="Eu quero um sistema"></td>
+               		</tr>
+               		
+               	</table>
+                 </center>
+                 			<div id="recebeEscolha"></div>
+                                 </section>
+               <section id="objeto1" style="display: none;"> <br>
+
+                  <textarea name="descricao" cols="70" rows="4" placeholder="Digite aqui detalhes do seu projeto"></textarea>
+               </section>
+               <section id="objeto2" style="display: none;">
+                    <center ng-app="">
+            <p>Verba disponível : R$<input type="text" ng-model="orcamento" class="money" name="verba"></input></p>
+            <p></p>
+               Prazo:<input type="number" name="prazo" ng-model="prazo" ></input>
+               <select name="tipoPrazo" ng-model="tipoPrazo">
+                  <option value="40" >Semana(s)</option>
+                  <option value="8">Dia(s)</option>
+                  <option value="160">Mes(s)</option>
+                  <option value="1920">Ano(s)</option>
+               </select>
+               <hr>
+         <input type="submit" class="btn btn-success" value="Enviar proposta">
+               <br></br>
+
+
+               
+            
+      
+      </center>
+               </section>
+               <section id="objeto3" style="display: none;">
+                  <hr>
+                  
+                  <hr>
+               </section>
+
+</form>
+
+               <center>
+                  <table>
+                     <tr>
+                        <td onclick="insereLegenda();"><input type="button"  id="fadeIn" class="btn btn-success" style="margin: 20px;" value="Avançar"></td>
+                        <td onclick="voltaMensagem();"><input type="button"  id="fadeOut" class="btn btn-danger" value="Voltar"></td>
+                     </tr>
+                  </table>
+               </center>
+               <script type="text/javascript" src="lib/fadeAvancar/appFade.js"></script>
+               <div id="home">
+               </div>
+            </div>
+         </div>
       </div>
-    </nav>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript">
+        
+         
+         var mensagens = ["<h1>Selecione o tipo de projeto que precisa (Aplicativo, site ou sistema)</h1>", "<h1>Faça uma breve descrição do seu projeto (do que precisa, do que deseja nele, como serão os detalhes)</h1>",
+         	"<h1>Coloque detalhes sobre verba disponível e prazos</h1>",
+         	"<h1>Clique em enviar proposta!</h1>"
+         ];
+         
+         
+         var extrangeira = avancar; // Informa o desenvolvedor da manutenção, que a variável é de outro arquivo. Arquivo: lib/fadeAvancar/appFade.js
+         
+         function insereLegenda(){
+            decideBotaoAvancar();
+         	document.getElementById('legenda').innerHTML = mensagens[extrangeira];
+         	if (extrangeira < 3) {
+         		extrangeira++;
+         	}
 
-    <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center" >
-        	<hr>
-          			<div id="home">
-          				
-          			</div>
-        </div>
-      </div>
-    </div>
+           
+         }
+         
+         function voltaMensagem(){
+            decideBotaoAvancar(); 
+         	if (extrangeira > 0 ) {
+         		extrangeira--;
+         	}
+         	document.getElementById('legenda').innerHTML = mensagens[extrangeira];
+                              	
+         }
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+         function decideBotaoAvancar(){
+             
+             if (extrangeira >= 3) {
+                document.getElementById('fadeIn').style.display = 'none' ;
+            }
+               else
+               {
+                  document.getElementById('fadeIn').style.display = 'inline' ;
+               }
+         }
 
-    <script type="text/javascript">
-    	$( "#home" ).load( "root_includes/orcamento.html" );
-    </script>
+         function escolheTipoDeProjeto($tipoProjeto){
+         	var projetoEscolhido = 'Você escolheu: <b>'+$tipoProjeto+'!</b> Clique em avançar! <input type="hidden" name="tipoProjeto" value="'+$tipoProjeto+'">' ;
+         	         	document.getElementById('recebeEscolha').innerHTML = projetoEscolhido;
 
-  </body>
+         }
+      </script>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="lib/jquery.mask.min.js"></script>
+
+<script type="text/javascript">
+
+   // Sempre coloque este script apos o input e após as dependencias, e as dependencias antes
+   // Coloque a classe de sua input como "money"
+      $(document).ready(function(){
+   $('.money').mask('000.000.00', {reverse: true});
+   $('.hora').mask('000.000.00', {reverse: true});
+  
+  $(".money").change(function(){
+    $("#value").html($(this).val().replace(/\D/g,''))
+  })
+  
+});
+</script>
+
+
+   </body>
 </html>
+

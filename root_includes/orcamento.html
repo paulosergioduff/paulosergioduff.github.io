@@ -1,37 +1,17 @@
-     <center>
-            <p>orcamento : <input type="text" ng-model="orcamento"></p>
-            <p>
-               Prazo:<input type="number" name="prazo" ng-model="prazo">
+     <center ng-app="">
+            <p>Verba disponível : R$<input type="text" ng-model="orcamento" class="money" name="verba"></input></p>
+            <p></p>
+               Prazo:<input type="number" name="prazo" ng-model="prazo" ></input>
                <select name="tipoPrazo" ng-model="tipoPrazo">
-                  <option value="40">Semana(s)</option>
+                  <option value="40" >Semana(s)</option>
                   <option value="8">Dia(s)</option>
                   <option value="160">Mes(s)</option>
                   <option value="1920">Ano(s)</option>
                </select>
-               <br>
-               <button onclick="consultar();" class="btn btn-success">Consultar</button>
-            <div id="carrinho" style="display: none">
-               <div id="resultado">{{orcamento}}</div>
-               <div id="prazo">{{prazo}}</div>
-               <div id="tipoPrazo">{{tipoPrazo}}</div>
-            </div>
-      </div>
+               <br></br>
+               <input type="submit" value="Enviar proposta" class="btn btn-success">
+            </form>
+      
       </center>
- </div>
-      <script type="text/javascript">
-         function consultar(){
-         	var orcamento = document.getElementById('resultado').innerHTML;
-         	var tipoPrazo = document.getElementById('tipoPrazo').innerHTML;
-         	var prazo = document.getElementById('prazo').innerHTML;
-         	var prazoTotal = prazo * tipoPrazo;
-         	var valorDaHora = orcamento / prazoTotal;
-         
-         	if (valorDaHora < 5.29) {
-         		alert('Sua proposta foi reprovada pelo sistema! Valor:'+valorDaHora);
-         	}
-         		else{
-         			alert('Sua proposta foi pré-provada pelo sistema! Valor:'+valorDaHora);
-         		}
-         }
-         
-      </script>
+
+      
