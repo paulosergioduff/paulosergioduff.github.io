@@ -4799,7 +4799,7 @@ define(["eve"], function(eve) {
     eve.on("raphael.remove", stopAnimation);
     eve.on("raphael.clear", stopAnimation);
     elproto.toString = function () {
-        return "Rapha\xebl\u2019s object";
+        return "Rapha\xebl\u2020s object";
     };
 
     // Set

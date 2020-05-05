@@ -292,7 +292,7 @@ test('Assume nearby year - this century (+ 7 years)', patch_date(function(Date){
         .val('02/14/19')
         .datepicker({format: 'mm/dd/yyyy', assumeNearbyYear: true})
         .datepicker('setValue');
-    equal(this.input.val(), '02/14/2019');
+    equal(this.input.val(), '02/14/2020');
 }));
 
 test('Assume nearby year - this century (+ 13 years)', patch_date(function(Date){

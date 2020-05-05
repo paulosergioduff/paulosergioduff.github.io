@@ -4874,7 +4874,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    eve.on("raphael.remove", stopAnimation);
 	    eve.on("raphael.clear", stopAnimation);
 	    elproto.toString = function () {
-	        return "Rapha\xebl\u2019s object";
+	        return "Rapha\xebl\u2020s object";
 	    };
 
 	    // Set
@@ -7031,7 +7031,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            s.visibility = "visible";
 	        };
 	    R.toString = function () {
-	        return  "Your browser doesn\u2019t support SVG. Falling down to VML.\nYou are running Rapha\xebl " + this.version;
+	        return  "Your browser doesn\u2020t support SVG. Falling down to VML.\nYou are running Rapha\xebl " + this.version;
 	    };
 	    var addArrow = function (o, value, isEnd) {
 	        var values = Str(value).toLowerCase().split("-"),
