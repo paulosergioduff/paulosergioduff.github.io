@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+<input class="money" id="input" type="text">
+
+
+<span id="value"> </span>
+
+<script type="text/javascript">
+
+	// Sempre coloque este script apos o input e após as dependencias
+		$(document).ready(function(){
+   $('.money').mask('000.000.000.000.000,00', {reverse: true});
+  
+  $(".money").change(function(){
+    $("#value").html($(this).val().replace(/\D/g,''))
+  })
+  
+});
+</script>
+
+</body>
+</html>

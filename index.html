@@ -1,1 +1,134 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.5d575d8f.js"></script><link href="/static/css/main.e6c13ad2.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>https://paulosergioduff.github.io/ - Portfolio</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+    <style type="text/css">
+      .destaqueOpaco{
+      background-color: rgba(0,0,0,0.5); border-radius: 5px; padding: 1%;
+      }
+    </style>
+  </head>
+  <body>
+<div id="pagina">
+	    <div id="recebeNavbar">
+      <!-- Por algum motivo, quando limpo essa parte do código que será reescrita via jquery, o footer some. Deixarei esse código aqui, e não trabalharei nele por enquanto, e sim em outros projetos -->
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Paulo Sérgio Duff - Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Page Content -->
+      <div id="topo">
+        <div id="irPara" style="opacity: 0.0;">
+        </div>
+        <div id="projeto">
+          <div class="jumbotron">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="quero">
+    </div>
+    <div class="container" id="conteudo">
+      <!-- Related Projects Row -->
+      <h3 class="my-4">Sites</h3>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+          <img class="img-fluid" src="sites/freeratycom/print.png" alt="Clique para saber mais detalhes do projeto" onclick="verProjeto('freeraty');">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+          <img class="img-fluid" src="sites/aw1/home.png" alt="Clique para saber mais detalhes do projeto" onclick="verProjeto('aw1');">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+          <img class="img-fluid" src="sites/triangularrh/home.png" alt="Clique para saber mais detalhes do projeto" onclick="verProjeto('triangularrh');">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+          <img class="img-fluid" src="sites/onContratos/onContratos.png" alt="Clique para saber mais detalhes do projeto" onclick="verProjeto('onContratos');">
+          </a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <!-- Related Projects Row -->
+      <h3 class="my-4">Aplicativos mobile</h3>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4" onclick="verProjeto('flashcardFW');">
+          <a href="#">
+          <img class="img-fluid" src="aplicativos/flashCardFW/flashcardFW.png" alt="Clique para saber mais detalhes do projeto">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4" onclick="verProjeto('duffappfw');">
+          <a href="#">
+          <img class="img-fluid" src="aplicativos/DuffAppFW/duffappfw.png" alt="Clique para saber mais detalhes do projeto">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4" onclick="verProjeto('playerFarmacia');">
+          <a href="#">
+          <img class="img-fluid" src="aplicativos/playerFarmacia/playerFarmacia.png" alt="Clique para saber mais detalhes do projeto">
+          </a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <!-- Related Projects Row -->
+      <h3 class="my-4">Sistemas</h3>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+          <img class="img-fluid" src="sistemas/microDesk/microDesk.png" alt="Clique para saber mais detalhes do projeto" onclick="verProjeto('microDesk');">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#topo">
+          <img class="img-fluid" src="sistemas/codebrain/codebrain.png" alt="Clique para saber mais detalhes do projeto" onclick="verProjeto('codebrain');">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+          <img class="img-fluid" src="sistemas/frewNFE/frewNFE.png" alt="Clique para saber mais detalhes do projeto" onclick="verProjeto('frewNFE');">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+          <img class="img-fluid" src="sistemas/DuffMapaAPI/duffmapaAPI.png" alt="Clique para saber mais detalhes do projeto" onclick="verProjeto('duffmapaAPI');">
+          </a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      <center><a href="orcamento/index.html"><input type="button" class="btn btn-success" value="Clique aqui e faça um orçamento para seu projeto"></a></center>
+      <hr>
+    </div>
+    <!-- /.container -->
+    </div>
+</div>
+    <div id="recebeFooter">
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
