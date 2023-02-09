@@ -1,0 +1,52 @@
+{
+    "quiz": [
+      {
+        "question": "Qual é a sua cor favorita?",
+        "options": [
+          "Vermelho",
+          "Azul",
+          "Verde",
+          "Amarelo"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Qual é o seu animal de estimação favorito?",
+        "options": [
+          "Cachorro",
+          "Gato",
+          "Pássaro",
+          "Peixe"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Qual é o seu lugar favorito para visitar?",
+        "options": [
+          "Praia",
+          "Montanha",
+          "Cidade grande",
+          "Campo"
+        ],
+        "answer": 2
+      }
+    ],
+    "resultsScale": [
+      {
+        "minScore": 0,
+        "maxScore": 1,
+        "result": "Você é uma pessoa simples e gosta de coisas simples."
+      },
+      {
+        "minScore": 2,
+        "maxScore": 2,
+        "result": "Você é uma pessoa equilibrada e gosta de variar entre coisas simples e extravagantes."
+      },
+      {
+        "minScore": 3,
+        "maxScore": 3,
+        "result": "Você é uma pessoa extravagante e gosta de coisas elaboradas e inovadoras."
+      }
+    ]
+  }
+  
